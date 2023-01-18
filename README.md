@@ -14,4 +14,4 @@ In development.
 ## Images
 
 - Purple login
-<img width="300" src="/src/assets/Purple_login.png" />
+<img width="600" heigth="400" src="/src/assets/Purple_login.png" />
