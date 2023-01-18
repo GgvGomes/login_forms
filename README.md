@@ -14,4 +14,4 @@ In development.
 ## Images
 
 - Purple login
-<img width="300" src="https://login-forms-beige.vercel.app/src/assets/Purple_login.png" />
+<img width="300" src="/src/assets/Purple_login.png" />
