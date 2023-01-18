@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Serif+Pro:wght@200;400;600;700;900&display=swap");
+
+.all_page {
+    background: linear-gradient(#655BBA, #383356 80%);
+}
+
+.purple {
+    -webkit-box-shadow: 0 1px 40px #8174FA,
+        0 0 40px rgba(0, 0, 0, 0) inset;
+    -moz-box-shadow: 0 1px 40px #8174FA,
+        0 0 40px rgba(0, 0, 0, 0) inset;
+    box-shadow: 0 1px 40px #8174FA,
+        0 0 40px rgba(0, 0, 0, 0) inset;
+
+    * {
+        // font-family: 'Source Serif Pro', serif;
+        letter-spacing: 1.5px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    background: linear-gradient(#2F2B51, #262240 60%);
+    color: white;
+
+    h1 {
+        width: 100%;
+        font-weight: 700;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-input {
+        position: relative;
+
+        label {
+            position: absolute;
+            font-size: 12px;
+            color: #8174FA;
+            top: -8px;
+            animation: animateLabelToTop .4s ease-in-out both;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid aliceblue;
+            color: aliceblue;
+            font-size: 14px;
+
+            &::placeholder {
+                color: aliceblue;
+                font-size: 14px;
+            }
+
+            &:focus-visible,
+            &:focus {
+                border: none;
+                border-bottom: 1px solid aliceblue;
+                outline: none;
+            }
+
+            &:not(:focus-visible)+label,
+            &:not(:focus)+label {
+                animation: animateLabelToBottom .4s ease-in-out both;
+            }
+        }
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 8px;
+
+        font-size: larger;
+        color: #736BBB;
+        background-color: transparent;
+        border: none;
+        border-radius: 4px;
+
+        position: relative;
+        width: 120px;
+        height: 44px;
+
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            letter-spacing: 4px;
+            font-weight: 600;
+            position: relative;
+            z-index: 8;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 300%;
+
+            background: linear-gradient(#262240 52%, #736BBB);
+            animation: animate 1s linear infinite;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: #262240;
+            border-radius: 2px;
+        }
+
+        &:hover {
+
+            &::before,
+            &::after {
+                background: #8174FA;
+
+                -webkit-box-shadow: 0 0 40px #8174FA;
+                -moz-box-shadow: 0 0 40px #8174FA;
+                box-shadow: 0 0 40px #8174FA;
+                -moz-border-radius: 100px / 10px;
+                border-radius: 100px / 10px;
+            }
+
+            background-color: #8174FA;
+            color: aliceblue;
+
+            -webkit-box-shadow:0 1px 40px #8174FA,
+            0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 1px 40px #8174FA,
+            0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 40px #8174FA,
+            0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+    }
+}
+
+@keyframes animateLabelToBottom {
+    0% {
+        position: absolute;
+        font-size: 12px;
+        color: #8174FA;
+        top: -8px;
+    }
+
+    100% {
+        top: 8px;
+        left: 4px;
+        font-size: 14px;
+        color: aliceblue;
+    }
+}
+@keyframes animateLabelToTop {
+    0% {
+        top: 8px;
+        left: 4px;
+        font-size: 14px;
+        color: aliceblue;
+    }
+    100% {
+        position: absolute;
+        font-size: 12px;
+        color: #8174FA;
+        top: -8px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
