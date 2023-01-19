@@ -1,3 +1,12 @@
+<style>
+  .div_centralizada{
+    display: flex;
+    aling-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+</style>
+
 
 # Login Forms
 
@@ -15,4 +24,4 @@ In development.
 
 - Purple login
   
-  <center><img width="600" heigth="400" src="/src/assets/Purple_login.png" /></center>
+  <div class="div_centralizada"><img width="600" heigth="400" src="/src/assets/Purple_login.png" /></div>
