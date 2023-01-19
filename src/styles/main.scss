@@ -14,11 +14,23 @@ body{
 }
 
 .grid-form{
+    position: relative;
     // background-color: white;
     border-radius: 8px;
 
     margin: auto;
     width: 40vw;
+    @media (max-width: 912px) {
+        zoom: 2;
+    }
+    @media (max-width: 540px) {
+        zoom: 1.1;
+        width: 70vw;
+    }
+    @media (max-width: 420px) {
+        zoom: 1;
+        width: 70vw;
+    }
 
     padding: 24px;
 
@@ -39,4 +51,10 @@ body{
     button{
         cursor: pointer;
     }
+}
+
+.pass_icon{
+    position: absolute;
+    bottom: 124px;
+    right: 24px;
 }

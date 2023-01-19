@@ -28,6 +28,10 @@
 
         display: flex;
         justify-content: center;
+
+        @media (max-width: 420px) {
+            font-size: 20px;
+        }
     }
 
     .grid-input {
@@ -60,8 +64,8 @@
                 outline: none;
             }
 
-            &:not(:focus-visible)+label,
-            &:not(:focus)+label {
+            &:not(:focus-visible, .input_filled)+label,
+            &:not(:focus, .input_filled)+label {
                 animation: animateLabelToBottom .4s ease-in-out both;
             }
         }
@@ -152,6 +156,7 @@
         color: aliceblue;
     }
 }
+
 @keyframes animateLabelToTop {
     0% {
         top: 8px;
@@ -159,6 +164,7 @@
         font-size: 14px;
         color: aliceblue;
     }
+
     100% {
         position: absolute;
         font-size: 12px;
