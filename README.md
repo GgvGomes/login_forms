@@ -17,4 +17,4 @@ In development.
 
 - Purple login
   
-  <div class="div_centralizada" syle="display: flex;aling-items: center;justify-content: center;width: 100%;"><img width="600" heigth="400" src="/src/assets/Purple_login.png" /></div>
+     <img width="800" heigth="600" src="/src/assets/Purple_login.png" />
