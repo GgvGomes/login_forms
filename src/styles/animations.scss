@@ -1,0 +1,20 @@
+@keyframes Backgroud_title {
+    0%{
+        // background: linear-gradient(rgb(14, 28, 137),#0D133E );
+        color: antiquewhite;
+    }
+    25%{
+        // background: linear-gradient(rgb(28, 42, 145),#0D133E );
+        color: rgb(176, 245, 222);
+    }
+    50%{
+        // background: linear-gradient(rgb(35, 51, 168),#0D133E );
+        color: rgb(142, 230, 200);
+    }
+    75%{
+        color:rgb(176, 245, 222)
+    }
+    100%{
+        color: beige;
+    }
+}
