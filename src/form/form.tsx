@@ -16,6 +16,7 @@ type Props_Forms = {
 
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
+import { Arrow_Back } from "../back/arrow_back";
 
 export function Form(props: Props_Forms) {
   const [showPassword, setShowPassword] = useState(false);
@@ -25,6 +26,8 @@ export function Form(props: Props_Forms) {
 
   return (
     <div className="all_page">
+      <Arrow_Back />
+
       <form className={`grid-form ${props.className}`}>
         <h1>{props.title || "Login"}</h1>
 

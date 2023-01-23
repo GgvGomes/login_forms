@@ -1,4 +1,4 @@
-import { Form } from "../form/from";
+import { Form } from "../form/form";
 
 import '../styles/purple.scss'
 

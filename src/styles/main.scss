@@ -11,6 +11,17 @@ body{
 
     display: flex;
     align-items: center;
+
+}
+.Arrow_Back{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: black;
+
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 .grid-form{
