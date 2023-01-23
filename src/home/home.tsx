@@ -2,12 +2,12 @@ import "../styles/home.scss";
 import { Cards } from "./cards";
 
 export function Home() {
-  const urlBase = window.location.href.indexOf('localhost') ? './src/assets/' : 'https://login-forms-beige.vercel.app/assets/';
+  const urlBase = window.location.href.indexOf('localhost') ? './src/assets/' : 'https://github.com/GgvGomes/login_forms/blob/master/src/assets/';
 
   const Cards_Infos = [
     {
-      src: "./Purple_login.png",
-      // src: `${urlBase}Purple_login.png`,
+      // src: "https://github.com/GgvGomes/login_forms/src/assets/Purple_login.png",
+      src: window.location.href.indexOf('localhost') ? `${urlBase}Purple_login.png` : `${urlBase}Purple_login.png?raw=true`,
       title: "Purple Form",
       to: "/purple",
     },
