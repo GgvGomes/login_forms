@@ -2,7 +2,7 @@ import "../styles/home.scss";
 import { Cards } from "./cards";
 
 export function Home() {
-  const urlBase = window.location.href.indexOf('localhost') ? './src/assets/' : 'https://login-forms.vercel.app/assets/';
+  const urlBase = window.location.href.indexOf('localhost') ? './src/assets/' : 'https://login-forms-beige.vercel.app/assets/';
 
   const Cards_Infos = [
     {
