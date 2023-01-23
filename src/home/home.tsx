@@ -6,7 +6,7 @@ export function Home() {
 
   const Cards_Infos = [
     {
-      src: "/src/assets/Purple_login.png",
+      src: "./Purple_login.png",
       // src: `${urlBase}Purple_login.png`,
       title: "Purple Form",
       to: "/purple",
