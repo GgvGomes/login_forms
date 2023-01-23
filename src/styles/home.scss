@@ -13,7 +13,7 @@ a{
     background: linear-gradient(rgb(19, 27, 88), rgb(0, 0, 0), ) no-repeat;
     width: 100vw;
     min-height: 100vh;
-
+    overflow: hidden;
     // font-family: 'Raleway', sans-serif;
 
     .grid-title {
@@ -22,7 +22,6 @@ a{
         padding-bottom: 28px;
 
         animation: Backgroud_title 2s ease-in-out infinite;
-
         h1,
         h2 {
             // color: whitesmoke;
@@ -32,21 +31,33 @@ a{
             flex-wrap: wrap;
             margin: 0px;
         }
-
+        
         h1 {
             padding-top: 12px;
             font-size: 80px;
             letter-spacing: 12px;
+            @media (max-width: 912px){
+                font-size: 120px;
+            }
+            @media (max-width: 425px){
+                font-size: 60px;
+            }
         }
 
         h2 {
             font-size: 30px;
+            @media (max-width: 912px){
+                font-size: 70px;
+            }
+            @media (max-width: 425px){
+                font-size: 30px;
+            }
         }
     }
 
     .grid-cards {
-        width: 87vw;
-        padding: 80px;
+        width: 100vw;
+        padding: 40px 0px;
 
         display: flex;
         gap: 40px;
@@ -56,6 +67,17 @@ a{
         .card {
             cursor: pointer;
             width: 280px;
+            
+            @media (max-width: 912px){
+                width: 420px;
+            }
+            @media (max-width: 400px){
+                width: 220px;
+            }
+            @media (max-width: 425px){
+                width: 200px;
+            }
+
             padding: 12px 4px;
             padding-bottom: 0px;
             border-radius: 10px;
@@ -68,6 +90,18 @@ a{
             img {
                 width: 280px;
                 height: 180px;
+                @media (max-width: 400px){
+                    width: 220px;
+                    height: 120px;
+                }
+                @media (max-width: 912px){
+                    width: 420px;
+                    height: 320px;
+                }
+                @media (max-width: 425px){
+                    width: 200px;
+                    height: 100px;
+                }
             }
 
             .infos {
@@ -78,11 +112,21 @@ a{
                 color: antiquewhite;
                 font-size: 18px;
                 font-weight: 600;
+
+                @media (max-width: 400px){
+                    font-size: 20px;
+                }
+                @media (max-width: 912px){
+                    font-size: 32px;
+                }
             }
 
             &:hover {
                 img{
                     transform: scale(1.4);
+                    @media (max-width: 400px){
+                        transform: scale(1.6);
+                    }
                 }
                 span{
                     transform: scale(1.1);
