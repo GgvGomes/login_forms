@@ -2,7 +2,7 @@ import "../styles/home.scss";
 import { Cards } from "./cards";
 
 export function Home() {
-  const urlBase = window.location.href.indexOf('localhost') != -1 ? './src/assets/' : 'https://github.com/GgvGomes/login_forms/blob/master/src/assets/';
+  const urlBase = window.location.href.indexOf('localhost') != -1 ? './src/assets/' : 'https://raw.githubusercontent.com/GgvGomes/login_forms/master/src/assets/';
 
   const Cards_Infos = [
     {
